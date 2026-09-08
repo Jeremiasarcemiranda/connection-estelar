@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pageTitle">Estelar Connection — Desarrollo Web & Sistemas</title>
+  <meta name="description" id="metaDescription" content="Estelar Connection, empresa de desarrollo de páginas web y sistemas a medida." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <header class="nav" id="nav">
+    <a class="nav-brand" href="#inicio">
+      <img src="assets/logo.png" alt="Logo Estelar Connection" class="nav-logo" />
+      <span>ESTELAR<span class="hl-cyan">·</span>CONNECTION</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">MENU</button>
+    <ul class="nav-links" id="navLinks">
+      <li><button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma">
+        <span class="lang-current active" data-lang="es">ES</span><span class="lang-sep">/</span><span class="lang-current" data-lang="en">EN</span>
+      </button></li>
+      <li><a href="#servicios" data-i18n="nav.servicios">Servicios</a></li>
+      <li><a href="#pasarela" data-i18n="nav.pasarela">Pasarela</a></li>
+      <li><a href="#quienes-somos" data-i18n="nav.nosotros">¿Quiénes somos?</a></li>
+      <li><a href="#proyectos" data-i18n="nav.proyectos">Proyectos</a></li>
+      <li class="nav-cta"><a href="#contacto" data-i18n="nav.contactar">Contactar →</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- ======= HERO ======= -->
+    <section class="hero" id="inicio">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-tag"><span>★</span> <span data-i18n="hero.tag">AGENCIA DE DESARROLLO WEB & SISTEMAS</span></p>
+        <h1 class="hero-title">
+          <span data-i18n="hero.line1">Conectamos tu</span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="hero-outline" data-i18n="hero.outline">con el cosmos.</span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero.sub">
+          En <strong>Estelar Connection</strong> diseñamos y desarrollamos páginas web, plataformas
+          y sistemas a medida. De las estrellas a tu pantalla.
+        </p>
+        <div class="hero-actions">
+          <a href="#pasarela" class="btn btn-primary" data-i18n="hero.cta1">Ver pasarela de tecnologías ↓</a>
+          <a href="#contacto" class="btn btn-line" data-i18n="hero.cta2">Empecemos un proyecto</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>+30</strong> <span data-i18n="hero.stat1">proyectos digitalizados</span></li>
+          <li><strong>100%</strong> <span data-i18n="hero.stat2">procesos manuales eliminados</span></li>
+          <li><strong>24/7</strong> <span data-i18n="hero.stat3">órbita de soporte</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======= TICKER ======= -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>HTML</span><i>✦</i><span>CSS</span><i>✦</i><span>JavaScript</span><i>✦</i>
+        <span>TypeScript</span><i>✦</i><span>Python</span><i>✦</i><span>PHP</span><i>✦</i>
+        <span>C#</span><i>✦</i><span>C++</span><i>✦</i><span>Node.js</span><i>✦</i>
+        <span>React</span><i>✦</i><span>Tailwind</span><i>✦</i><span>Bootstrap</span><i>✦</i>
+        <span>PostgreSQL</span><i>✦</i><span>MySQL</span><i>✦</i><span>MariaDB</span><i>✦</i>
+        <span>Docker</span><i>✦</i><span>Git</span><i>✦</i><span>Linux</span><i>✦</i>
+        <span>HTML</span><i>✦</i><span>CSS</span><i>✦</i><span>JavaScript</span><i>✦</i>
+        <span>TypeScript</span><i>✦</i><span>Python</span><i>✦</i><span>PHP</span><i>✦</i>
+        <span>C#</span><i>✦</i><span>C++</span><i>✦</i><span>Node.js</span><i>✦</i>
+        <span>React</span><i>✦</i><span>Tailwind</span><i>✦</i><span>Bootstrap</span><i>✦</i>
+        <span>PostgreSQL</span><i>✦</i><span>MySQL</span><i>✦</i><span>MariaDB</span><i>✦</i>
+        <span>Docker</span><i>✦</i><span>Git</span><i>✦</i><span>Linux</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ======= SERVICIOS ======= -->
+    <section class="section" id="servicios">
+      <div class="section-head reveal">
+        <p class="section-index" data-i18n="sec.servicios.idx">01 / SERVICIOS</p>
+        <h2>QUÉ <span class="hl" data-i18n="sec.servicios.h2">HACEMOS</span></h2>
+      </div>
+      <div class="cards-grid">
+        <article class="card reveal tilt">
+          <span class="card-ico">✧</span>
+          <p class="card-num">01</p>
+          <h3 data-i18n="serv.paginas.titulo">Páginas Web</h3>
+          <p data-i18n="serv.paginas.desc">Webs institucionales, portfolios y landing pages veloces, accesibles y con diseños que convierten visitantes en clientes.</p>
+          <ul class="card-tags">
+            <li>HTML</li><li>CSS</li><li>React</li><li>Tailwind</li>
+          </ul>
+        </article>
+        <article class="card reveal tilt card-accent">
+          <span class="card-ico">✦</span>
+          <p class="card-num">02</p>
+          <h3 data-i18n="serv.sistemas.titulo">Sistemas a Medida</h3>
+          <p data-i18n="serv.sistemas.desc">Plataformas de gestión: inscripciones, usuarios, reportes y automatización de procesos que hoy se hacen a mano.</p>
+          <ul class="card-tags">
+            <li>Node.js</li><li>Python</li><li>Django</li><li>PostgreSQL</li>
+          </ul>
+        </article>
+        <article class="card reveal tilt">
+          <span class="card-ico">★</span>
+          <p class="card-num">03</p>
+          <h3 data-i18n="serv.devops.titulo">Infraestructura & DevOps</h3>
+          <p data-i18n="serv.devops.desc">Despliegue, contenedores y administración de servidores Linux para mantener tus sistemas siempre arriba, seguros y veloces.</p>
+          <ul class="card-tags">
+            <li>Docker</li><li>Linux</li><li>Git</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======= PASARELA DE TECNOLOGÍAS ======= -->
+    <section class="section section-pasarela" id="pasarela">
+      <div class="stars stars-soft" aria-hidden="true"></div>
+      <div class="section-head reveal">
+        <p class="section-index" data-i18n="sec.pasarela.idx">02 / PASARELA</p>
+        <h2>PASARELA DE <span class="hl" data-i18n="sec.pasarela.h2">TECNOLOGÍAS</span></h2>
+      </div>
+      <p class="pasarela-sub reveal">
+        <span data-i18n="sec.pasarela.sub1">Nuestras tecnologías desfilan por la pasarela.</span> <span class="mono">← <span data-i18n="sec.pasarela.sub2">arrastrá</span></span>
+      </p>
+      <div class="runway reveal" id="runway">
+        <div class="runway-spot" aria-hidden="true"></div>
+        <div class="runway-track" id="runwayTrack">
+          <article class="tech-card cat-lang"><span class="tc-ico"><img src="assets/logos/html.svg" alt="HTML" /></span><span class="tc-cat" data-i18n="cat.language">LENGUAJE</span><h3 data-i18n="tech.html">HTML</h3><p data-i18n="tech-desc.html">Estructura semántica de toda la web.</p></article>
+          <article class="tech-card cat-style"><span class="tc-ico"><img src="assets/logos/css.svg" alt="CSS" /></span><span class="tc-cat" data-i18n="cat.style">ESTILO</span><h3 data-i18n="tech.css">CSS</h3><p data-i18n="tech-desc.css">Diseño, layout y animaciones.</p></article>
+          <article class="tech-card cat-lang"><span class="tc-ico"><img src="assets/logos/javascript.svg" alt="JavaScript" /></span><span class="tc-cat" data-i18n="cat.language">LENGUAJE</span><h3 data-i18n="tech.javascript">JavaScript</h3><p data-i18n="tech-desc.javascript">Interactividad y dinamismo en el navegador.</p></article>
+          <article class="tech-card cat-lang"><span class="tc-ico"><img src="assets/logos/typescript.svg" alt="TypeScript" /></span><span class="tc-cat" data-i18n="cat.language">LENGUAJE</span><h3 data-i18n="tech.typescript">TypeScript</h3><p data-i18n="tech-desc.typescript">JavaScript con tipado fuerte y seguro.</p></article>
+          <article class="tech-card cat-front"><span class="tc-ico"><img src="assets/logos/react.svg" alt="React" /></span><span class="tc-cat" data-i18n="cat.frontend">FRONT-END</span><h3 data-i18n="tech.react">React</h3><p data-i18n="tech-desc.react">Interfaces modernas y componentes reutilizables.</p></article>
+          <article class="tech-card cat-style"><span class="tc-ico"><img src="assets/logos/tailwind.svg" alt="Tailwind CSS" /></span><span class="tc-cat" data-i18n="cat.framework">FRAMEWORK</span><h3 data-i18n="tech.tailwind">Tailwind CSS</h3><p data-i18n="tech-desc.tailwind">Estilos utilitarios de desarrollo veloz.</p></article>
+          <article class="tech-card cat-style"><span class="tc-ico"><img src="assets/logos/bootstrap.svg" alt="Bootstrap" /></span><span class="tc-cat" data-i18n="cat.framework">FRAMEWORK</span><h3 data-i18n="tech.bootstrap">Bootstrap</h3><p data-i18n="tech-desc.bootstrap">Grids y componentes listos para usar.</p></article>
+          <article class="tech-card cat-lang"><span class="tc-ico"><img src="assets/logos/python.svg" alt="Python" /></span><span class="tc-cat" data-i18n="cat.language">LENGUAJE</span><h3 data-i18n="tech.python">Python</h3><p data-i18n="tech-desc.python">Back-end, automatización y datos.</p></article>
+          <article class="tech-card cat-lang"><span class="tc-ico"><img src="assets/logos/php.svg" alt="PHP" /></span><span class="tc-cat" data-i18n="cat.language">LENGUAJE</span><h3 data-i18n="tech.php">PHP</h3><p data-i18n="tech-desc.php">Clásico del back-end web.</p></article>
+          <article class="tech-card cat-lang"><span class="tc-ico"><img src="assets/logos/csharp.svg" alt="C#" /></span><span class="tc-cat" data-i18n="cat.language">LENGUAJE</span><h3 data-i18n="tech.csharp">C#</h3><p data-i18n="tech-desc.csharp">Robusto para aplicaciones y servicios.</p></article>
+          <article class="tech-card cat-lang"><span class="tc-ico"><img src="assets/logos/cplusplus.svg" alt="C++" /></span><span class="tc-cat" data-i18n="cat.language">LENGUAJE</span><h3 data-i18n="tech.cplusplus">C++</h3><p data-i18n="tech-desc.cplusplus">Alto rendimiento y sistemas.</p></article>
+          <article class="tech-card cat-back"><span class="tc-ico"><img src="assets/logos/nodejs.svg" alt="Node.js" /></span><span class="tc-cat" data-i18n="cat.backend">BACK-END</span><h3 data-i18n="tech.nodejs">Node.js</h3><p data-i18n="tech-desc.nodejs">JavaScript del lado del servidor.</p></article>
+          <article class="tech-card cat-bd"><span class="tc-ico"><img src="assets/logos/postgresql.svg" alt="PostgreSQL" /></span><span class="tc-cat" data-i18n="cat.database">BASE DE DATOS</span><h3 data-i18n="tech.postgresql">PostgreSQL</h3><p data-i18n="tech-desc.postgresql">Base relacional avanzada y confiable.</p></article>
+          <article class="tech-card cat-bd"><span class="tc-ico"><img src="assets/logos/mysql.svg" alt="MySQL" /></span><span class="tc-cat" data-i18n="cat.database">BASE DE DATOS</span><h3 data-i18n="tech.mysql">MySQL</h3><p data-i18n="tech-desc.mysql">Base relacional popular y probada.</p></article>
+          <article class="tech-card cat-bd"><span class="tc-ico"><img src="assets/logos/mariadb.svg" alt="MariaDB" /></span><span class="tc-cat" data-i18n="cat.database">BASE DE DATOS</span><h3 data-i18n="tech.mariadb">MariaDB</h3><p data-i18n="tech-desc.mariadb">Derivado de MySQL de código abierto.</p></article>
+          <article class="tech-card cat-ops"><span class="tc-ico"><img src="assets/logos/docker.svg" alt="Docker" /></span><span class="tc-cat" data-i18n="cat.devops">DEVOPS</span><h3 data-i18n="tech.docker">Docker</h3><p data-i18n="tech-desc.docker">Contenedores para todo ambiente.</p></article>
+          <article class="tech-card cat-ops"><span class="tc-ico"><img src="assets/logos/git.svg" alt="Git" /></span><span class="tc-cat" data-i18n="cat.versions">VERSIONES</span><h3 data-i18n="tech.git">Git</h3><p data-i18n="tech-desc.git">Control de versiones colaborativo.</p></article>
+          <article class="tech-card cat-ops"><span class="tc-ico"><img src="assets/logos/linux.svg" alt="Linux" /></span><span class="tc-cat" data-i18n="cat.systems">SISTEMAS</span><h3 data-i18n="tech.linux">Linux</h3><p data-i18n="tech-desc.linux">Servidores y administración de sistemas.</p></article>
+        </div>
+      </div>
+      <div class="runway-controls reveal">
+        <button class="run-btn" id="runPrev" aria-label="Anterior"><span data-i18n="pasarela.ant">← ANT</span></button>
+        <div class="runway-dots" id="runDots"></div>
+        <button class="run-btn" id="runNext" aria-label="Siguiente"><span data-i18n="pasarela.sig">SIG →</span></button>
+      </div>
+    </section>
+
+    <!-- ======= ¿QUIÉNES SOMOS? ======= -->
+    <section class="section" id="quienes-somos">
+      <div class="section-head reveal">
+        <p class="section-index" data-i18n="sec.nosotros.idx">03 / NOSOTROS</p>
+        <h2>¿QUIÉNES <span class="hl" data-i18n="sec.nosotros.h2">SOMOS?</span></h2>
+      </div>
+      <div class="about">
+        <div class="about-visual reveal tilt">
+          <img src="assets/logo.png" alt="Logo Estelar Connection" class="about-logo" />
+        </div>
+        <div class="about-text reveal">
+          <h3><span class="hl" data-i18n="about.titulo1">Estelar Connection</span> <span data-i18n="about.titulo2">lleva tu organización a otra galaxia digital.</span></h3>
+          <p data-i18n="about.p1">
+            Nacimos desde la digitalizacion de un comedor escolar, migracion de registros físicos
+            a plataformas web completas y armamos servidores. Desde la base de datos
+            hasta el último píxel de la interfaz, hacemos que la tecnología trabaje por vos.
+          </p>
+          <p data-i18n="about.p2">
+            Creemos en software <strong>simple, directo y confiables</strong>. Somos curiosos,
+            autodidactas y metódicos; cada proyecto es una constelación nueva por descubrir.
+          </p>
+          <div class="about-values">
+            <div>
+              <h4 data-i18n="about.mision.titulo">MISIÓN</h4>
+              <p data-i18n="about.mision.desc">Conectar procesos con tecnología y construir productos que resuelvan de verdad.</p>
+            </div>
+            <div>
+              <h4 data-i18n="about.valores.titulo">VALORES</h4>
+              <p data-i18n="about.valores.desc">Autodidacta · Equipo · Comunicación clara · Metodologías ágiles · Calidad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= PROYECTOS ======= -->
+    <section class="section section-neo" id="proyectos">
+      <div class="section-head reveal">
+        <p class="section-index" data-i18n="sec.trabajo.idx">04 / TRABAJO</p>
+        <h2>PROYECTOS <span class="hl" data-i18n="sec.trabajo.h2">REALES</span></h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project reveal tilt">
+          <div class="project-top">
+            <span class="project-year">2023 — 2025</span>
+            <span class="project-state" data-i18n="proy.estado.terminado">TERMINADO</span>
+          </div>
+          <h3>Sistema de Gestión de Comedor <span class="hl">(SGC)</span></h3>
+          <p data-i18n="proy.sgc.desc">
+            Un sistema para el comedor escolar con multiples usuarios, basesdedatos, servidores, recuperacion de cuentas y pdf. 
+          </p>
+          <ul class="card-tags">
+            <li>PostgreSQL</li><li data-i18n="proy.tag.backend">Backend</li><li data-i18n="proy.tag.automatizacion">Automatización</li>
+          </ul>
+        </article>
+        <article class="project reveal tilt project-alt">
+          <div class="project-top">
+            <span class="project-year">2025</span>
+            <span class="project-state" data-i18n="proy.estado.terminado2">Terminado</span>
+          </div>
+          <h3 data-i18n="proy.institucional.titulo">Web Institucional & Gestión de Inscripciones</h3>
+          <p data-i18n="proy.institucional.desc">
+            Plataforma <strong>full-stack</strong> para la EET N°21: web pública + sistema de gestión
+            de inscripciones internas. Migración digital completa de registros físicos.
+          </p>
+          <ul class="card-tags">
+            <li>Full-Stack</li><li data-i18n="proy.tag.web">Web</li><li data-i18n="proy.tag.gestion">Gestión</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======= CONTACTO ======= -->
+    <section class="section section-pasarela section-contact" id="contacto">
+      <div class="stars stars-soft" aria-hidden="true"></div>
+      <div class="section-head reveal">
+        <p class="section-index" data-i18n="sec.contacto.idx">05 / CONTACTO</p>
+        <h2>DESPEGAMOS TU <span class="hl" data-i18n="sec.contacto.h2">PROYECTO</span></h2>
+      </div>
+      <div class="contact">
+        <div class="contact-info reveal">
+          <ul>
+            <li><span class="contact-label">✉ EMAIL</span><a href="mailto:ginohaceungmail@gmail.com">jeremiasarcemiranda@gmail.com</a></li>
+            <li><span class="contact-label">📱 TELÉFONO</span><a href="tel:+54">+54 343 5101568</a></li>
+            <li><span class="contact-label" data-i18n="contacto.ubicacion">📍 UBICACIÓN</span>Paraná, Entre Ríos, Argentina</li>
+          </ul>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="field">
+            <label for="nombre" data-i18n="contacto.nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" data-i18n-placeholder="contacto.ph.nombre" required />
+          </div>
+          <div class="field">
+            <label for="correo" data-i18n="contacto.correo">Correo *</label>
+            <input type="email" id="correo" name="correo" placeholder="tu@correo.com" data-i18n-placeholder="contacto.ph.correo" required />
+          </div>
+          <div class="field">
+            <label for="mensaje" data-i18n="contacto.mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos qué necesitás construir..." data-i18n-placeholder="contacto.ph.mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-i18n="contacto.enviar">Enviar mensaje →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <img src="assets/logo.png" alt="Logo" class="footer-logo" />
+      <div>
+        <h4 data-i18n="footer.navegacion">NAVEGACIÓN</h4>
+        <ul>
+          <li><a href="#inicio" data-i18n="footer.inicio">Inicio</a></li>
+          <li><a href="#servicios" data-i18n="footer.servicios">Servicios</a></li>
+          <li><a href="#pasarela" data-i18n="footer.pasarela">Pasarela</a></li>
+          <li><a href="#quienes-somos" data-i18n="footer.nosotros">¿Quiénes somos?</a></li>
+          <li><a href="#proyectos" data-i18n="footer.proyectos">Proyectos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>STACK</h4>
+        <ul>
+          <li>HTML · CSS · JS · TypeScript</li>
+          <li>React · Tailwind · Bootstrap</li>
+          <li>Python · PHP · C# · C++ · Node.js</li>
+          <li>PostgreSQL · MySQL · MariaDB</li>
+          <li>Docker · Git · Linux</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contacto">CONTACTO</h4>
+        <ul>
+          <li><a href="mailto:jeremiasarcemiranda@gmail.com">jeremiasarcemiranda@gmail.com</a></li>
+          <li><a href="tel:+543435101568">+54 343 5101568</a></li>
+          <li data-i18n="footer.ubicacion">Paraná, Entre Ríos, Argentina</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><span data-i18n="footer.derechos">© 2026 Estelar Connection. Todos los derechos reservados.</span></p>
+      <p class="footer-code">&lt;CONSTRUIDO BAJO UN CIELO NEGRO&gt;</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
